@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books - SecondChapter Books</title>
+  <meta name="description" content="Browse our collection of quality secondhand books at SecondChapter Books.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="logo">
+          <a href="index.html">SecondChapter Books</a>
+        </div>
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Books</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-icons">
+          <a href="#" id="search-icon"><img src="images/search.svg" alt="Search"></a>
+          <a href="#" id="cart-icon">
+            <img src="images/cart.svg" alt="Cart">
+            <span class="cart-count">0</span>
+          </a>
+          <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Our Book Collection</h1>
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a> &gt; Books
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section">
+      <div class="container">
+        <div class="products-layout">
+          <aside class="filters-sidebar">
+            <h2>Filters</h2>
+            
+            <div class="filter-group">
+              <h3>Categories</h3>
+              <div class="filter-options">
+                <label><input type="checkbox" name="category" value="all" checked> All</label>
+                <label><input type="checkbox" name="category" value="fiction"> Fiction</label>
+                <label><input type="checkbox" name="category" value="non-fiction"> Non-Fiction</label>
+                <label><input type="checkbox" name="category" value="philosophy"> Philosophy</label>
+                <label><input type="checkbox" name="category" value="psychology"> Psychology</label>
+              </div>
+            </div>
+            
+            <div class="filter-group">
+              <h3>Price Range</h3>
+              <div class="price-slider">
+                <input type="range" min="0" max="20" value="20" class="slider" id="price-range">
+                <div class="price-values">
+                  <span>$0</span>
+                  <span id="price-value">$20</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="filter-group">
+              <h3>Book Condition</h3>
+              <div class="filter-options">
+                <label><input type="checkbox" name="condition" value="all" checked> All</label>
+                <label><input type="checkbox" name="condition" value="like-new"> Like New</label>
+                <label><input type="checkbox" name="condition" value="good"> Good</label>
+                <label><input type="checkbox" name="condition" value="acceptable"> Acceptable</label>
+              </div>
+            </div>
+            
+            <div class="filter-group">
+              <h3>Sort By</h3>
+              <select id="sort-by">
+                <option value="default">Featured</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name-asc">Title: A to Z</option>
+                <option value="name-desc">Title: Z to A</option>
+                <option value="rating">Customer Rating</option>
+              </select>
+            </div>
+            
+            <button id="apply-filters" class="btn">Apply Filters</button>
+          </aside>
+          
+          <div class="products-container">
+            <div class="products-header">
+              <div class="products-count">Showing <span id="products-count">0</span> books</div>
+              <div class="view-options">
+                <button class="view-btn grid-view active"><img src="images/grid.svg" alt="Grid View"></button>
+                <button class="view-btn list-view"><img src="images/list.svg" alt="List View"></button>
+              </div>
+            </div>
+            
+            <div class="products-grid" id="products-grid">
+              <!-- Products will be loaded via JavaScript -->
+              <div class="loading">Loading books...</div>
+            </div>
+            
+            <div class="pagination">
+              <button class="pagination-btn" disabled>&lt;</button>
+              <div class="pagination-numbers">
+                <span class="page-number active">1</span>
+                <span class="page-number">2</span>
+                <span class="page-number">3</span>
+              </div>
+              <button class="pagination-btn">&gt;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>SecondChapter Books</h3>
+          <p>Giving books a new life and readers a new adventure.</p>
+          <div class="social-links">
+            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Books</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Visit Us</h3>
+          <p>123 Book Lane<br>Literary Town, LT 10001</p>
+          <p>Phone: (123) 456-7890<br>Email: info@secondchapter.com</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Store Hours</h3>
+          <p>Monday-Friday: 10am - 7pm<br>Saturday: 10am - 5pm<br>Sunday: 12pm - 4pm</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 SecondChapter Books. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="close-cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <!-- Cart items will be loaded via JavaScript -->
+      <div class="empty-cart">Your cart is empty</div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cart-total-amount">$0.00</span>
+      </div>
+      <button class="btn checkout-btn">Checkout</button>
+    </div>
+  </div>
+  
+  <div class="overlay" id="overlay"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
